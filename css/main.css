@@ -1,19 +1,33 @@
 
 body {
+  margin: 0;
   font-family: Helvetica
 }
-  
-  #content {
-    margin: 5% 30% 0 30%
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
 }
-    
-.projects img {
-  float: left;
-  width: 100px;
-  height 100px;
-  margin 10px;
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
 }
-  
-.projects {
-  min-height: 100px;
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
 }
